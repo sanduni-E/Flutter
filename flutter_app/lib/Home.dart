@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Chemical.dart';
 
  class Home extends StatefulWidget {
    @override
@@ -31,25 +32,206 @@ import 'package:flutter/material.dart';
         fontFamily: 'Pacifico', fontWeight: FontWeight.w400),),
           backgroundColor: Colors.white , centerTitle: true, ),
          backgroundColor: Colors.white ,
-       
-       body: GridView.count(
-           crossAxisCount: 2,
-         children: List.generate(7, (index){
 
-           return new Card(
-             elevation: 10.0,
-             margin: EdgeInsets.all(7.0),
-             shape: new RoundedRectangleBorder(
-               borderRadius: new BorderRadius.circular(20.0)
+       body: new GridView.count(
+           crossAxisCount: 2,
+           children: <Widget>[
+             new GestureDetector(
+               child: new Card(
+                 elevation: 10.0,
+                   margin: EdgeInsets.all(7.0),
+                     shape: new RoundedRectangleBorder(
+                       borderRadius: new BorderRadius.circular(20.0)
+                     ),
+                 child: new Column(
+                   children: <Widget>[
+                     new Image.asset("Images/Chemical.jpg",
+                     height: 140.0,
+                     width: 140.0,
+                     fit: BoxFit.cover,),
+                     new SizedBox(
+                       height: 5.0,
+                     ),
+                     new Text("Chemical",
+                       style: TextStyle(
+                         fontSize: 18.0,
+                         color: Color(0xFF76FF03)
+                       ),
+                     )
+                   ],
+                 ),
+               ),
+               onTap: (){
+                 Navigator.push(
+                     context,
+                     MaterialPageRoute(
+                         builder: (context)  => G1())
+                 );
+               },
              ),
-             child: new Container(
-               child: new Text("$index"),
+             new GestureDetector(
+               child: new Card(
+                 elevation: 10.0,
+                 margin: EdgeInsets.all(7.0),
+                 shape: new RoundedRectangleBorder(
+                     borderRadius: new BorderRadius.circular(20.0)
+                 ),
+                 child: new Column(
+                   children: <Widget>[
+                     new Image.asset("Images/Electronic.png",
+                       height: 140.0,
+                       width: 140.0,
+                       fit: BoxFit.cover,),
+                     new SizedBox(
+                       height: 5.0,
+                     ),
+                     new Text("E-Waste",
+                       style: TextStyle(
+                           fontSize: 18.0,
+                           color: Color(0xFF76FF03)
+                       ),
+                     )
+                   ],
+                 ),
+               ),
              ),
-           );
-         })
-       )
+             new GestureDetector(
+               child: new Card(
+                 elevation: 10.0,
+                 margin: EdgeInsets.all(7.0),
+                 shape: new RoundedRectangleBorder(
+                     borderRadius: new BorderRadius.circular(20.0)
+                 ),
+                 child: new Column(
+                   children: <Widget>[
+                     new Image.asset("Images/Glass.png",
+                       height: 140.0,
+                       width: 140.0,
+                       fit: BoxFit.cover,),
+                     new SizedBox(
+                       height: 5.0,
+                     ),
+                     new Text("Glass",
+                       style: TextStyle(
+                           fontSize: 18.0,
+                           color: Color(0xFF76FF03)
+                       ),
+                     )
+                   ],
+                 ),
+               ),
+             ),
+             new GestureDetector(
+               child: new Card(
+                 elevation: 10.0,
+                 margin: EdgeInsets.all(7.0),
+                 shape: new RoundedRectangleBorder(
+                     borderRadius: new BorderRadius.circular(20.0)
+                 ),
+                 child: new Column(
+                   children: <Widget>[
+                     new Image.asset("Images/Organics.png",
+                       height: 140.0,
+                       width: 140.0,
+                       fit: BoxFit.cover,),
+                     new SizedBox(
+                       height: 5.0,
+                     ),
+                     new Text("Organic",
+                       style: TextStyle(
+                           fontSize: 18.0,
+                           color: Color(0xFF76FF03)
+                       ),
+                     )
+                   ],
+                 ),
+               ),
+             ),
+             new GestureDetector(
+               child: new Card(
+                 elevation: 10.0,
+                 margin: EdgeInsets.all(7.0),
+                 shape: new RoundedRectangleBorder(
+                     borderRadius: new BorderRadius.circular(20.0)
+                 ),
+                 child: new Column(
+                   children: <Widget>[
+                     new Image.asset("Images/Papers.png",
+                       height: 140.0,
+                       width: 140.0,
+                       fit: BoxFit.cover,),
+                     new SizedBox(
+                       height: 5.0,
+                     ),
+                     new Text("Papers",
+                       style: TextStyle(
+                           fontSize: 18.0,
+                           color: Color(0xFF76FF03)
+                       ),
+                     )
+                   ],
+                 ),
+               ),
+             ),
+             new GestureDetector(
+               child: new Card(
+                 elevation: 10.0,
+                 margin: EdgeInsets.all(7.0),
+                 shape: new RoundedRectangleBorder(
+                     borderRadius: new BorderRadius.circular(20.0)
+                 ),
+                 child: new Column(
+                   children: <Widget>[
+                     new Image.asset("Images/Plastics.png",
+                       height: 140.0,
+                       width: 140.0,
+                       fit: BoxFit.cover,),
+                     new SizedBox(
+                       height: 5.0,
+                     ),
+                     new Text("Plastics",
+                       style: TextStyle(
+                           fontSize: 18.0,
+                           color: Color(0xFF76FF03)
+                       ),
+                     )
+                   ],
+                 ),
+               ),
+             ),
+             new GestureDetector(
+               child: new Card(
+                 elevation: 10.0,
+                 margin: EdgeInsets.all(7.0),
+                 shape: new RoundedRectangleBorder(
+                     borderRadius: new BorderRadius.circular(20.0)
+                 ),
+                 child: new Column(
+                   children: <Widget>[
+                     new Image.asset("Images/Polythene.png",
+                       height: 140.0,
+                       width: 140.0,
+                       fit: BoxFit.cover,),
+                     new SizedBox(
+                       height: 5.0,
+                     ),
+                     new Text("Polythene",
+                       style: TextStyle(
+                           fontSize: 18.0,
+                           color: Color(0xFF76FF03)
+                       ),
+                     )
+                   ],
+                 ),
+               ),
+             )
+           ],
+       ),
+
+
 
        );
+
 
 
    }

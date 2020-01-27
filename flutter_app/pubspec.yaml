@@ -40,3 +40,7 @@ flutter:
     - family: Pacifico
       fonts:
         - asset: assets/font/Pacifico.ttf
+
+
+  assets:
+    - Images/Chemical.jpg
