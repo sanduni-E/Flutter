@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class G1 extends StatefulWidget{
@@ -19,8 +20,8 @@ class Chemical extends State<G1>{
     return new Scaffold(
 
       appBar: new AppBar(
-        title: new Text("Chemical", textAlign: TextAlign.center, style: TextStyle(fontSize: 40,color: Color(0xFF76FF03),
-            fontFamily: 'Pacifico', fontWeight: FontWeight.w400),),
+        title: new Text("Chemical", textAlign: TextAlign.center, style: TextStyle(fontSize: 30,color: Color(0xFFE65100),
+            fontFamily: 'Pacifico', fontWeight: FontWeight.w600),),
         backgroundColor: Colors.white , centerTitle: true, ),
       backgroundColor: Colors.white ,
 
@@ -40,14 +41,18 @@ class L1 extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return new Card(
+      shape: new RoundedRectangleBorder(
+          borderRadius: new BorderRadius.circular(20.0)
+      ),
       elevation: 10.0,
       child: new Container(
         margin: EdgeInsets.all(10.0),
         padding: EdgeInsets.all(10.0),
         child: new Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
 
-            new Text(itemName,style: TextStyle(fontSize: 20.0),textAlign: TextAlign.center,)
+            new Text(itemName,style: TextStyle(fontSize: 20.0,color: Color(0xFFFF9800), fontWeight: FontWeight.w600),),
           ],
         ),
       ),

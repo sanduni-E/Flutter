@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Chemical.dart';
+import 'package:flutter_app/E-Waste.dart';
+import 'package:flutter_app/Glass.dart';
+
+
 
  class Home extends StatefulWidget {
    @override
@@ -28,7 +32,7 @@ import 'package:flutter_app/Chemical.dart';
      return new Scaffold(
 
        appBar: new AppBar(
-         title: new Text("Eco Friendly", textAlign: TextAlign.center, style: TextStyle(fontSize: 40,color: Color(0xFF76FF03),
+         title: new Text("Eco Friendly", textAlign: TextAlign.center, style: TextStyle(fontSize: 40,color: Color(0xFFE65100),
         fontFamily: 'Pacifico', fontWeight: FontWeight.w400),),
           backgroundColor: Colors.white , centerTitle: true, ),
          backgroundColor: Colors.white ,
@@ -55,7 +59,7 @@ import 'package:flutter_app/Chemical.dart';
                      new Text("Chemical",
                        style: TextStyle(
                          fontSize: 18.0,
-                         color: Color(0xFF76FF03)
+                         color: Color(0xFFFF9800)
                        ),
                      )
                    ],
@@ -88,12 +92,19 @@ import 'package:flutter_app/Chemical.dart';
                      new Text("E-Waste",
                        style: TextStyle(
                            fontSize: 18.0,
-                           color: Color(0xFF76FF03)
+                           color: Color(0xFFFF9800)
                        ),
                      )
                    ],
                  ),
                ),
+              onTap: (){
+                 Navigator.push(
+                     context,
+                     MaterialPageRoute(
+                         builder: (context)  => G2())
+                );
+              },
              ),
              new GestureDetector(
                child: new Card(
@@ -114,7 +125,7 @@ import 'package:flutter_app/Chemical.dart';
                      new Text("Glass",
                        style: TextStyle(
                            fontSize: 18.0,
-                           color: Color(0xFF76FF03)
+                           color: Color(0xFFFF9800)
                        ),
                      )
                    ],
@@ -140,7 +151,7 @@ import 'package:flutter_app/Chemical.dart';
                      new Text("Organic",
                        style: TextStyle(
                            fontSize: 18.0,
-                           color: Color(0xFF76FF03)
+                           color: Color(0xFFFF9800)
                        ),
                      )
                    ],
@@ -166,7 +177,7 @@ import 'package:flutter_app/Chemical.dart';
                      new Text("Papers",
                        style: TextStyle(
                            fontSize: 18.0,
-                           color: Color(0xFF76FF03)
+                           color: Color(0xFFFF9800)
                        ),
                      )
                    ],
@@ -192,7 +203,7 @@ import 'package:flutter_app/Chemical.dart';
                      new Text("Plastics",
                        style: TextStyle(
                            fontSize: 18.0,
-                           color: Color(0xFF76FF03)
+                           color: Color(0xFFFF9800)
                        ),
                      )
                    ],
@@ -206,6 +217,7 @@ import 'package:flutter_app/Chemical.dart';
                  shape: new RoundedRectangleBorder(
                      borderRadius: new BorderRadius.circular(20.0)
                  ),
+                 child: new Center(
                  child: new Column(
                    children: <Widget>[
                      new Image.asset("Images/Polythene.png",
@@ -218,12 +230,13 @@ import 'package:flutter_app/Chemical.dart';
                      new Text("Polythene",
                        style: TextStyle(
                            fontSize: 18.0,
-                           color: Color(0xFF76FF03)
+                           color: Color(0xFFFF9800)
                        ),
                      )
                    ],
                  ),
                ),
+             )
              )
            ],
        ),
@@ -235,5 +248,8 @@ import 'package:flutter_app/Chemical.dart';
 
 
    }
- }
+
+
+
+
  
