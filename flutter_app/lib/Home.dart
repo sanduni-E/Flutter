@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Chemical.dart';
 import 'package:flutter_app/E-Waste.dart';
+import 'package:flutter_app/Glass.dart';
+import 'package:flutter_app/Organic.dart';
+import 'package:flutter_app/Papers.dart';
+import 'package:flutter_app/Plastics.dart';
+import 'package:flutter_app/Polythene.dart';
 
 
  class Home extends StatefulWidget {
@@ -101,7 +106,7 @@ import 'package:flutter_app/E-Waste.dart';
                Navigator.push(
                    context,
                    MaterialPageRoute(
-                       builder: (context) => H1())
+                       builder: (context) => G2())
                );
              },
            ),
@@ -130,6 +135,13 @@ import 'package:flutter_app/E-Waste.dart';
                  ],
                ),
              ),
+             onTap: () {
+               Navigator.push(
+                   context,
+                   MaterialPageRoute(
+                       builder: (context) => G3())
+               );
+             },
            ),
            new GestureDetector(
              child: new Card(
@@ -156,6 +168,13 @@ import 'package:flutter_app/E-Waste.dart';
                  ],
                ),
              ),
+             onTap: () {
+               Navigator.push(
+                   context,
+                   MaterialPageRoute(
+                       builder: (context) => G4())
+               );
+             },
            ),
            new GestureDetector(
              child: new Card(
@@ -182,6 +201,13 @@ import 'package:flutter_app/E-Waste.dart';
                  ],
                ),
              ),
+             onTap: () {
+               Navigator.push(
+                   context,
+                   MaterialPageRoute(
+                       builder: (context) => G5())
+               );
+             },
            ),
            new GestureDetector(
              child: new Card(
@@ -208,6 +234,13 @@ import 'package:flutter_app/E-Waste.dart';
                  ],
                ),
              ),
+             onTap: () {
+               Navigator.push(
+                   context,
+                   MaterialPageRoute(
+                       builder: (context) => G6())
+               );
+             },
            ),
            new GestureDetector(
                child: new Card(
@@ -235,7 +268,14 @@ import 'package:flutter_app/E-Waste.dart';
                      ],
                    ),
                  ),
-               )
+               ),
+             onTap: () {
+               Navigator.push(
+                   context,
+                   MaterialPageRoute(
+                       builder: (context) => G7())
+               );
+             },
            )
          ],
        ),
