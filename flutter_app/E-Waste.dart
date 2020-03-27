@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class G2 extends StatefulWidget{
+class H1 extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
@@ -11,7 +11,7 @@ class G2 extends StatefulWidget{
 
 }
 
-class EWaste extends State<G2>{
+class EWaste extends State<H1>{
 
   final List<String>listof=["Domestic","Scale","Buyers","Sellers"];
   @override
